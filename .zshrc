@@ -34,3 +34,4 @@ bindkey '^[[B' history-substring-search-down
 alias gst='git status'
 alias g='lazygit'
 alias gco='git checkout'
+alias gap='git add -p'

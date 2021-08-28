@@ -1,3 +1,4 @@
+# Essential
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
@@ -9,9 +10,17 @@ brew "zsh-autosuggestions"
 brew "zsh-history-substring-search"
 brew "zsh-syntax-highlighting"
 brew "romkatv/powerlevel10k/powerlevel10k"
+cask "iterm2"
 cask "karabiner-elements"
 cask "maccy"
+cask "mos"
 cask "obsidian"
 cask "raycast"
 cask "swish"
 cask "visual-studio-code"
+
+# meh
+cask "calibre"
+cask "hot"
+cask "iina"
+cask "stats"
