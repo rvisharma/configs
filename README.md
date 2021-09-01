@@ -23,3 +23,6 @@ install xcode command line tools from [here](https://developer.apple.com/downloa
 ## Brew bundle commands
 - to dump new Brewfile `brew bundle dump`
 - to check if all of Brewfile is installed `brew bundle check`
+
+## Step 3 - Karabiner setup
+- move `karabiner.json` to `~/.config/karabiner`
