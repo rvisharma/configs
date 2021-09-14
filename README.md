@@ -29,3 +29,4 @@ install xcode command line tools from [here](https://developer.apple.com/downloa
 
 ## Step 4 - Espanso setup
 - copy `espanso` folder content to location `$(espanso path)` -> config
+- run `espanso register`
