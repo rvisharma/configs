@@ -1,0 +1,16 @@
+name: contact
+parent: default
+
+
+matches:
+  - trigger: "/em"
+    replace: ""
+
+  - trigger: "/mob"
+    replace: ""
+
+  - trigger: "/fem"
+    replace: ""
+
+  - trigger: "/fmob"
+    replace: ""
