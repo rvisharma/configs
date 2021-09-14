@@ -20,9 +20,12 @@ install xcode command line tools from [here](https://developer.apple.com/downloa
 - cd to this Repo
 - exec `brew bundle install`
 
-## Brew bundle commands
+### Brew bundle commands
 - to dump new Brewfile `brew bundle dump`
 - to check if all of Brewfile is installed `brew bundle check`
 
 ## Step 3 - Karabiner setup
 - move `karabiner.json` to `~/.config/karabiner`
+
+## Step 4 - Espanso setup
+- copy `espanso` folder content to location `$(espanso path)` -> config
