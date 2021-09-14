@@ -30,6 +30,24 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
+
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_OPTS="--extended"
+# for `fzf`
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
+# for ctrl + t
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+# for shell extension - https://github.com/junegunn/fzf#environment-variables
+_fzf_compgen_path() {
+  fd --hidden --follow --exclude ".git" . "$1"
+}
+# Use fd to generate the list for directory completion
+_fzf_compgen_dir() {
+  fd --type d --hidden --follow --exclude ".git" . "$1"
+}
+
+
 # aliases
 alias gst='git status'
 alias g='lazygit'
