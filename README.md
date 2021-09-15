@@ -1,4 +1,4 @@
-#Configs
+# Configs
 
 ## Step 0
 install xcode command line tools from [here](https://developer.apple.com/download/all/?q=command%20line%20tools)
@@ -30,3 +30,24 @@ install xcode command line tools from [here](https://developer.apple.com/downloa
 ## Step 4 - Espanso setup
 - copy `espanso` folder content to location `$(espanso path)` -> config
 - run `espanso register`
+
+## Step 5 - Setup multiple git configs
+
+[Source - Multiple Accounts and Git](https://www.bram.us/2021/09/03/multiple-accounts-and-git/)
+
+    Here’s an example ~/.gitconfig that has two dynamic includes:
+
+    [user]
+      name = "John Doe"
+
+    [includeIf "gitdir:~/repos/personal/"]
+      path = ~/.gitconfig.personal
+
+    [includeIf "gitdir:~/repos/work/"]
+      path = ~/.gitconfig.work
+
+
+    Inside each ~/.gitconfig.XXX you can then list extra config values, here the email address to use for each:
+
+    [user]
+      email = john@example.org
